@@ -1,0 +1,90 @@
+/* frontend/src/App.css */
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+div {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.new-habit {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.new-habit input {
+  flex: 1;
+  padding: 10px;
+}
+
+.new-habit button {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.habit-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.streak {
+  font-size: 1.1rem;
+  color: #e67e22;
+}
+
+.history {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.box {
+  width: 32px;
+  height: 32px;
+  background: #eee;
+  color: #777;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.box.done {
+  background: #ff5722;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button.checked {
+  background: #8bc34a;
+  cursor: not-allowed;
+}
+
+.delete-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: none;
+  color: gray;
+}
+
+.delete-btn:hover {
+  color: red;
+}
